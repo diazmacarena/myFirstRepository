@@ -10,18 +10,18 @@ bool isPalindrome(int num) {
     return original == reversed;
 }
 
-int main() {
-    int largestPalindrome = 0;
-
+int largestPalindrome() {
+    int largest{0};
     for (int i = 100; i < 1000; i++) {
         for (int j = i; j < 1000; j++) {
             int product = i * j;
-            if (isPalindrome(product) && product > largestPalindrome) {
-                largestPalindrome = product;
+            if (isPalindrome(product) && product > largest) {
+                largest = product;
             }
         }
     }
 
+int main() {
     largestPalindrome << std::endl;
     return 0;
 }
