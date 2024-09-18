@@ -14,12 +14,14 @@ long largestPrimeFactor(long n) {
             n /= i;
         }
     }
-
+        if (n > 2) {
+        maxPrime = n;
+    }
     return maxPrime;
 }
 
 int main() {
     long number = 600851475143;
-    std::cout << "Largest prime factor: " << largestPrimeFactor(number) << std::endl;
+    largestPrimeFactor(number) << std::endl;
     return 0;
 }
