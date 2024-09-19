@@ -3,8 +3,8 @@
 using namespace std;
 
 bool isPalindrome(int num) {
-    int reversed = 0;
-    int original = num;
+    int reversed{0};
+    int original{num};
     
     while (num > 0) {
         reversed = reversed * 10 + num % 10;
