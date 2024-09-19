@@ -18,8 +18,8 @@ bool isPrime (int n) {
 
 int main() {
 
-    int count = 0;
-    int num = 1;
+    int count{1};
+    int num{2};
     int prime;
 
     while (count < 10001) {
@@ -31,6 +31,10 @@ int main() {
         }
     }
 
+    cout << "The 10001st prime number is: " << prime << endl;
+
+    return 0;
+}
     cout << "The 10001st prime number is: " << prime << endl;
 
     return 0;
