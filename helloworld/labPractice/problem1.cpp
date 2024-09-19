@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int multiples(int n) {
     int sum{0};
-    for (int n{3}; n <1000000; n++) {
-        if (n % 3 == 0) {
-            sum += n;
-        } else if (n % 5 == 0) {
-            sum += n;
+    for (int i{3}; i < n; i++) {
+        if (i % 3 == 0 || i % 5== 0) {
+            sum += i;
         }
     }
+    return sum;
+}
 
-    cout << sum;
+int main() {
+    cout << multiples(1000000);
 }

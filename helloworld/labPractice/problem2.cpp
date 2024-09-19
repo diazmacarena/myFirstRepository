@@ -1,11 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n;
-    cout << "Enter an integer: ";
-    cin >> n;
-
+void oddNumbers(int n) {
     for (int i{1}; i < n; i++) {
         if (i % 2 != 0) {
             if (i != 1) {
@@ -14,4 +10,9 @@ int main() {
         cout << i;
         }
     }
+}
+
+int main() {
+    oddNumbers(10);
+    return 0;
 }
