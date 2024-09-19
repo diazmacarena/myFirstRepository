@@ -1,26 +1,37 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
-bool isPrime(int num) {
-    if (num <= 1) return false;
-    for (int i = 2; i * i <= num; i++) {
-        if (num % i == 0) return false;
+bool isPrime (int n) {
+    if (n <= 1) {
+        return false;
+    }
+    int i{2};
+    while (i < n) {
+        if (n % i == 0) {
+            return false;
+        }
+        i++;
     }
     return true;
 }
 
 int main() {
+
     int count = 0;
-    int number = 1;
+    int num = 1;
     int prime;
 
     while (count < 10001) {
-        number++;
-        if (isPrime(number)) {
+        num++;
+
+        if (isPrime(num)) {
             count++;
-            prime = number;
+            prime = num;
         }
     }
 
-    std::cout << "The 10001st prime number is: " << prime << std::endl;
+    cout << "The 10001st prime number is: " << prime << endl;
+
     return 0;
 }

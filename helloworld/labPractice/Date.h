@@ -10,6 +10,7 @@ class Date {
             if (currentMonth >= 1 && currentMonth <= 12) {
             month = currentMonth;
             } 
+            
             day = currentDay;
             
         }

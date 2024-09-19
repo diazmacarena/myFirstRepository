@@ -1,16 +1,25 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
 int main() {
-    int a = 1, b = 2, sum = 0;
-    while (b <= 4000000) {
-        if (b % 2 == 0) {
-            sum += b;
+
+    int i = 1;
+    int j = 2;
+    int sum = 0;
+
+    while (j <= 4000000) {
+        if (j % 2 == 0) {
+            sum += j;
         }
-        int next = a + b;
-        a = b;
-        b = next;
+
+        int h = i + j;
+        i = j;
+        i = h;
     }
-    std::cout << "Sum of even-valued terms: " << sum << std::endl;
+    
+    cout << "Sum of even-valued terms: " << sum << endl;
     return 0;
+    
 }
       

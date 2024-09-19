@@ -1,7 +1,11 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
 bool isPalindrome(int num) {
-    int reversed = 0, original = num;
+    int reversed = 0;
+    int original = num;
+    
     while (num > 0) {
         reversed = reversed * 10 + num % 10;
         num /= 10;
@@ -10,6 +14,7 @@ bool isPalindrome(int num) {
 }
 
 int main() {
+
     int largestPalindrome = 0;
 
     for (int i = 100; i < 1000; i++) {
@@ -21,6 +26,7 @@ int main() {
         }
     }
 
-    std::cout << "The largest palindrome made from the product of two 3-digit numbers is: " << largestPalindrome << std::endl;
+    cout << "The largest palindrome made from the product of two 3-digit numbers is: " << largestPalindrome << endl;
     return 0;
+    
 }

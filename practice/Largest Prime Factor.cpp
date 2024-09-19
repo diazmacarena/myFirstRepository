@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
 long largestPrimeFactor(long long n) {
     long maxPrime = -1;
@@ -19,6 +21,6 @@ long largestPrimeFactor(long long n) {
 
 int main() {
     long long number = 600851475143;
-    std::cout << "Largest Prime Factor: " << largestPrimeFactor(number) << std::endl;
+    cout << "Largest Prime Factor: " << largestPrimeFactor(number) << endl;
     return 0;
 }
