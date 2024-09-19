@@ -4,9 +4,9 @@ using namespace std;
 
 int main() {
 
-    int i = 1;
-    int j = 2;
-    int sum = 0;
+    int i{1};
+    int j{2};
+    int sum{0};
 
     while (j <= 4000000) {
         if (j % 2 == 0) {
@@ -15,11 +15,10 @@ int main() {
 
         int h = i + j;
         i = j;
-        i = h;
+        j = h;
     }
     
     cout << "Sum of even-valued terms: " << sum << endl;
     return 0;
     
 }
-      
