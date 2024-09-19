@@ -35,7 +35,3 @@ int main() {
 
     return 0;
 }
-    cout << "The 10001st prime number is: " << prime << endl;
-
-    return 0;
-}
