@@ -6,15 +6,14 @@ class Date {
     public:
         Date (int currentMonth, int currentDay, int currentYear) 
         :   year(currentYear){
-            setMonth(currentMonth);
+
+            if (currentMonth >= 1 && currentMonth <= 12) {
+            month = currentMonth;
+            } 
             day = currentDay;
             
         }
-        void setMonth(int currentMonth) {
-        if (currentMonth >= 1 && currentMonth <= 12) {
-            month = currentMonth;
-            } 
-        }
+
         int getMonth() const {
             return month;
         }
