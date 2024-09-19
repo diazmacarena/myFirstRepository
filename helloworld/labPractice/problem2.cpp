@@ -2,7 +2,7 @@
 using namespace std;
 
 void oddNumbers(int n) {
-    for (int i{1}; i < n; i++) {
+    for (int i{1}; i <= n; i++) {
         if (i % 2 != 0) {
             if (i != 1) {
                 cout << ",";
@@ -13,6 +13,6 @@ void oddNumbers(int n) {
 }
 
 int main() {
-    oddNumbers(10);
+    oddNumbers(9);
     return 0;
 }
