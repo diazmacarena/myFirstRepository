@@ -12,7 +12,7 @@ int main( ) {
     unsigned int frequency6{0};
     int face;
 
-    for (unsigned int roll{1}; roll <= 60000000; ++roll) {
+    for (unsigned int roll{1}; roll <= 60'000'000; ++roll) {
         face = 1 + rand() % 6;
 
         switch(face) {
