@@ -27,7 +27,7 @@ int main() {
 
 void outputVector(const vector<int>& items) {
     for (int item : items) {
-        cout << item << " 5";
+        cout << item << " ";
     }
 }
 void inputVector(vector<int>& items) {
