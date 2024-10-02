@@ -12,7 +12,7 @@ int main() {
 
     vector<int> a(i);
 
-    for (int j{1}; j < i; j++) {
+    for (int j{1}; j <= i; j++) {
         a[j] = toPow(j,2);
     }
 
