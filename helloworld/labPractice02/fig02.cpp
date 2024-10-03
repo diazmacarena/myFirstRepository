@@ -3,23 +3,29 @@
 
 using namespace std;
 
-int countLetters(string n) {
+int count(string n);
+bool isalpha(char car);
+
+int main() {
+    string cadena;
+    cout << "Cadena: ";
+    getline(cin, cadena); 
+
+    int letterCount = count(cadena);
+    cout << letterCount << endl;
+}
+
+int count(string n) {
     int count = 0;
-    for (char c : n) { // Iterate over characters in the string
-        if (isalpha(c)) { // Use isalpha() to check if a character is a letter
+    for (char c : n) { 
+        if (isalpha(c)) { 
             count++;
         }
     }
     return count;
 }
 
-int main() {
-    string inputString;
-    cout << "Enter a string: ";
-    getline(cin, inputString); // Use getline to read the entire line
-
-    int letterCount = countLetters(inputString);
-    cout << "Number of letters: " << letterCount << endl;
-
-    return 0;
+bool isalpha(char car) {
+    char i = static_cast<int>(car);
+    return ((i>= 65 && i<=90) || (i>= 97 && i<=122 ));
 }

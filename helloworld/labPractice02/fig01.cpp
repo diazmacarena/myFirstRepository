@@ -8,13 +8,13 @@ bool esPrimo(int n);
 int main() {
     array<int, 10> items = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-    int primeCount = 0;
+    int count = 0;
     for (int item : items) {
         if (esPrimo(item)) {
             primeCount++;
         }
     }
-    cout << primeCount;
+    cout << count;
 }
 
 
