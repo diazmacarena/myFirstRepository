@@ -10,7 +10,7 @@ int main() {
     cout << ptr << endl;
     cout << *ptr << endl;
 
-    /*cout << array << endl;
+    cout << array << endl;
     cout << (array+0) << "-" << *(array+0) << endl;
     cout << (array+1) << "-" << *(array+1) << endl;
     cout << (array+2) << "-" << *(array+2) << endl;
@@ -22,7 +22,7 @@ int main() {
     ini++;
     cout << ini << "-" << *ini << endl;
     ini++;
-    cout << ini << "-" << *ini << endl;*/
+    cout << ini << "-" << *ini << endl;
 
     cout << array << endl;
     int *end = array + (size - 1);
