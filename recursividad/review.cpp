@@ -50,15 +50,24 @@ void invertir(int array[], int size) {
     }
 }
 
-void outputArray(const int* array, const int size) {
-    for (int i{0}; i < size; i++) {
-        cout << *(array+i) << " ";
+void outputArray(const int *array, int size) {
+    while(size--)
+        cout << *array++ << " ";
+}
+
+void invertirPtr(int* bgn, int*end) {
+    while (bgn < end) {
+        int temp = *bgn;
+        *bgn = *end;
+        *end = temp;
+        bgn++;
+        end--;
     }
 }
 
 int main() {
     int array[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
     int size = sizeof(array) / sizeof(array[0]);
-    invertir(array, size);
+    invertirPtr(array, array+size-1);
     outputArray(array, size);
 }
