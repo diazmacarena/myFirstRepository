@@ -20,31 +20,16 @@ char isNum(char car) {
     return car;  // Si no es número, devolver tal cual
 }
 
-// Función para procesar una sola cadena
-void processString(string& cadena) {
-    for (int i = 0; i < cadena.size(); i++) {  // Recorre cada carácter de la cadena
-        char& c = cadena[i];  // Referencia al carácter actual
-
-        // Convertir mayúsculas a minúsculas
-        c = toLower(c);
-
-        // Reemplazar números por '-'
-        c = isNum(c);
-
-        // Ignorar caracteres que no son ni letras ni números
-        int asciiValue = static_cast<int>(c);
-        if (!((asciiValue >= 97 && asciiValue <= 122) || (asciiValue >= 48 && asciiValue <= 57))) {
-            continue;  // Ignorar caracteres especiales
-        }
-    }
-}
 
 int main() {
     string cadena = "HeLLo123@World#";
-    
-    // Procesar la cadena
-    processString(cadena);
-    
+
+    for (int i = 0; i < cadena.length(); i++) {  // Recorre cada carácter de la cadena
+        char& c = cadena[i];
+        c = isNum(c);      // Asigna el resultado de isNum
+        c = toLower(c);     // Asigna el resultado de toLower
+    }
+
     // Imprimir la cadena modificada
     cout << cadena << endl;
 

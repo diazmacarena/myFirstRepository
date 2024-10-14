@@ -3,16 +3,16 @@
 using namespace std;
 
 int main() {
-    /*int x{10};
+    int x{10};
     cout << &x << endl;
-    int* ptr = &x;
+    int *ptr = &x;
     cout << ptr << endl;
     cout << *ptr << endl;
-    cout << *&x << endl;*/
+    cout << *&x << endl;
 
-    int y{2000};
+   /* int y{2000};
     cout << &y << endl;
     int *ptr = &y;
     cout << ptr << endl;
-    cout << *ptr << endl;
+    cout << *ptr << endl;*/
 }

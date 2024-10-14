@@ -3,16 +3,16 @@ using namespace std;
 
 int main() {
     int x= 10;
-    /*cout << x << endl;
-    cout << &x << endl;*/
+    cout << x << endl;
+    cout << &x << endl;
 
     int &ptr = ++x;
     cout << "ptr++ es " << ptr++ << endl;
     cout <<"ptr es " << ptr << endl;
 
-    /*x = x*x;
+    x = x*x;
     cout<< x << endl;
-    cout << &ptr<< endl;*/
+    cout << &ptr<< endl;
 
     int arr[] = {1, 2, 0, 4, 9, 10};
 

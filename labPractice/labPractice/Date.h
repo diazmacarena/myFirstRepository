@@ -5,13 +5,11 @@ using namespace std;
 class Date {
     public:
         Date (int currentMonth, int currentDay, int currentYear) 
-        :   year(currentYear){
+        :   year(currentYear), day(currentDay){
 
             if (currentMonth >= 1 && currentMonth <= 12) {
             month = currentMonth;
             } 
-            
-            day = currentDay;
             
         }
 

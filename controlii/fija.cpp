@@ -15,7 +15,7 @@ bool isNum(char car) {
 int main(){
     string cadena{"12ab5co7"};
     int suma=0;
-    for (size_t i{0}; i <cadena.size();i++ ){
+    for (size_t i{0}; i <cadena.length();i++ ){
         if(isNum(cadena[i])) {
             suma+= cadena[i] -'0';
         }
