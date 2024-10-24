@@ -1,0 +1,4 @@
+Time sunset; // object of type Time
+array<Time, 5> arrayOfTimes; // array of 5 Time objects
+Time& dinnerTimeRef{sunset}; // reference to a Time object
+Time* timePtr{&sunset}; // pointer to a Time object

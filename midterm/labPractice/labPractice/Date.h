@@ -10,7 +10,6 @@ class Date {
             if (currentMonth >= 1 && currentMonth <= 12) {
             month = currentMonth;
             } 
-            
         }
 
         int getMonth() const {
