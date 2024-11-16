@@ -29,8 +29,8 @@ void Date::setDate(int mm, int dd, int yy) {
     }
 
     //test for a leap year
-    if ((mn == 2 && leapYear(year) && dd >= 1 && <= 29) ||
-    (dd >= 1 && dd <= days[mn])) {
+    if ((mm == 2 && leapYear(year) && dd >= 1 && dd <= 29) ||
+    (dd >= 1 && dd <= days[mm])) {
         day = dd;
     }
     else {
@@ -74,7 +74,7 @@ bool Date::endOfMonth(int testDay) const {
         return testDay == 29;
     }
     else {
-        return testDay == day[month];
+        return testDay == days[month];
     }
 }
 
