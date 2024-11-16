@@ -1,5 +1,3 @@
-
-
 #include <iomanip>
 #include <stdexcept>
 #include <sstream>
@@ -15,8 +13,7 @@ void Time::setTime(int h, int m, int s) {
         hour = h;
         minute = m;
         second = s;
-    }
-    else {
+    } else {
         throw invalid_argument(
             "hour, minute and/or second was out of range");
     }

@@ -3,6 +3,9 @@
 
 #include <iostream>
 
+//this: puntero a la instancia actual de la clase this-> is a shorthand for (*this).variable
+ 
+
 class Point {
     public:
         Point(): x{0}, y{0} {
@@ -15,10 +18,10 @@ class Point {
             return y;
         }
         void setX(int _x) {
-            x = _x;
+            this->_x;
         }
         void setY(int _y) {
-            y = _y;
+            this->_y;
         }
         void print() const {
             std::cout << x << y << std::endl;
