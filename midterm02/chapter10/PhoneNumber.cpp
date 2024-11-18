@@ -1,7 +1,12 @@
+
+
 #include <iomanip>
 #include "PhoneNumber.h"
-using namespace std;
+using namespace  std;
 
+
+//overloaded stream insertion operator; cannot be a member function
+//if we would like to invoke it with cout << somePhoneNumber;
 ostream& operator<<(ostream& output, const PhoneNumber& number) {
     output << "Area code: " << number.areaCode << "\nExchange: "
         << number.exchange << "\nLine: " << number.line << "\n"
@@ -10,12 +15,14 @@ ostream& operator<<(ostream& output, const PhoneNumber& number) {
     return output;
 }
 
+//overloaded stream extraction operator; cannot be a member function
+//if we would like to invoke it with cin >> somePhoneNumber;
 istream& operator>>(istream& input, PhoneNumber& number) {
-    input.ignore();
-    input >> setw(3) >> number.areaCode;
-    input.ignore(2);
-    input >> setw(3) >> number.exchange;
-    input.ignore();
-    input >> setw(4) >> number.line;
+    input.ignore(); // skip (
+    input >> setw(3) >> number.areaCode; // input area code
+    input.ignore(2); // skip ) and space
+    input >> setw(3) >> number.exchange; // input exchange
+    input.ignore(); // skip dash (-)
+    input >> setw(4) >> number.line; //input line
     return input;
 }

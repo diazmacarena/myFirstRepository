@@ -1,3 +1,5 @@
+
+
 #include <iostream>
 #include "Date.h"
 using namespace std;
@@ -14,10 +16,12 @@ int main() {
     cout << "\n++d2 is " << ++d2 << " (leap year allows 29th)";
 
     Date d3{7, 13, 2010};
+
         cout << "\n\nTesting the prefix increment operator:\n"
             << " d3 is " << d3 << endl;
         cout << "++d3 is " << ++d3 << endl;
         cout << " d3 is " << d3;
+        
         cout << "\n\nTesting the postfix increment operator:\n"
             << " d3 is " << d3 << endl;
         cout << "d3++ is " << d3++ << endl;
