@@ -1,0 +1,21 @@
+control allocation and deallocation of memory
+Dynamic Memory Management
+performed with the operators new and delete
+new, to dynamically allocate (i.e., reserve) the exact same amount of memory required at execution time
+the object or built-in array is created in the free store (aldo called the heap) 
+heap, a region of memory assigned to each program for storing dynamically allocated objects.
+delete operator to deallocate (i.e., releasse)the memory
+
+Obtaining Dynamic Memory with new
+Time* timePtr{new Time}
+delete timePtr
+
+Initializing Dynamic Memory
+double *ptr{new double{3.14159}}; //assigns the resulting pointer to ptr
+Time* timrPtr{new Time{12, 45, 0}}: //arguments to an object’s constructor
+
+Dynamically Allocating Built-In Arrays with new[]
+int* gradesArray{new int[10]{}};
+
+Releasing Dynamically Allocated Built-in Arrays with delete[]
+delete[] gradesArray;
