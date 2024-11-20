@@ -1,0 +1,10 @@
+Explain the use of the operators new and delete.
+new, to dynamically allocate (i.e., reserve) the exact same amount of memory required at execution time.
+the object or built-in array is created in the free store (aldo called the heap) 
+heap, a region of memory assigned to each program for storing dynamically allocated objects.
+delete, operator to deallocate (i.e., releasse) the memory.
+
+
+You can control the allocation and deallocation of memory in a program for objects and for
+arrays of any built-in or user-defined type. This is known as dynamic memory management and is
+performed with the operators new and delete.

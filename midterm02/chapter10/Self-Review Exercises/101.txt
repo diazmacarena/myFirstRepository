@@ -1,0 +1,14 @@
+Fill in the blanks in each of the following:
+a. When operators are overloaded as member functions, they must be non-static, because 
+they must be called on an object of the class and operate on that object.
+b. A constructor that´s declared explicit cannot be used in an implicit conversion.
+c. Standard class string is defined in header <string> and belongs to namespace
+std.
+d. The istream member function ignore discards the specified number of characters in 
+the input stream.
+e. A conversion operator must be a non-static member function.
+f. You cannot change the "arity" of an operator.
+g. A constructor that can be called with a single argument can be used as a conversion constructor.
+
+
+

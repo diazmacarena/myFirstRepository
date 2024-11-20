@@ -1,0 +1,20 @@
+In what context might an operator be used as non-member function?
+• Operator functions can be member or non-member functions—non-member functions are often made friends for performance reasons. Member functions use the this pointer implicitly to
+obtain one of their class object arguments (the left operand for binary operators). Arguments for
+both operands of a binary operator must be explicitly listed in a non-member function call.
+• When an operator function is implemented as a member function, the leftmost (or only) operand
+must be an object (or a reference to an object) of the operator’s class.
+• If the left operand must be an object of a different class or a fundamental type, this operator function must be implemented as a non-member function
+• A non-member operator function can be made a friend of a class if that function must access
+private or protected members of that class directly.
+• Another reason to choose a non-member function to overload an operator is to enable the operator to be commutative. 
+
+
+If the left operand must be an object of a different class or a fundamental type, this operator
+function must be implemented as a non-member function. A non-member operator function can be made
+a friend of a class if that function must access private or protected members of that class directly.
+
+10.4 (True/False) A constructor that can be called with a single argument can be used as a conversion constructor. True
+10.5 How does the “arity” of an overloaded operator compared with the “arity” of the original operator?
+You cannot change the “arity” of an operator (that is, the number of operands an operator
+takes)-overloaded unary operators remain unary operators; overloaded binary operators remain binary operators.

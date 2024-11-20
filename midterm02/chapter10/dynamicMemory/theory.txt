@@ -4,7 +4,7 @@ performed with the operators new and delete
 new, to dynamically allocate (i.e., reserve) the exact same amount of memory required at execution time
 the object or built-in array is created in the free store (aldo called the heap) 
 heap, a region of memory assigned to each program for storing dynamically allocated objects.
-delete operator to deallocate (i.e., releasse)the memory
+delete operator to deallocate (i.e., releasse) the memory
 
 Obtaining Dynamic Memory with new
 Time* timePtr{new Time}
