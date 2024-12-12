@@ -15,7 +15,7 @@ class Point
         int getX() const;
         int getY() const;
 
-        Point& operator=(const Point& o);
+        const Point& operator=(const Point& o);
         bool operator==(const Point& right) const;
         bool operator!=(const Point& right) const;
 

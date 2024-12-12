@@ -25,7 +25,7 @@ int Point::getY() const{
     return this->y;
 }
 
-Point& Point::operator=(const Point& o){
+const Point& Point::operator=(const Point& o){
     this->x = o.getX();
     this->y = o.getY();
     return *this;

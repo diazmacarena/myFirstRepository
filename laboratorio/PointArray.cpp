@@ -27,7 +27,7 @@ PointArray::~PointArray() {
 }
 
 
-PointArray& PointArray::operator=(const PointArray& right) {
+const PointArray& PointArray::operator=(const PointArray& right) {
     if (&right != this) { 
         if (size != right.size) {
             delete[] ptr;
@@ -58,21 +58,21 @@ bool PointArray::operator==(const PointArray& right) const {
     return true; 
 }
 
-Point& PointArray::operator[](int b) {
-    if (b < 0 || b >= size) {
+Point& PointArray::operator[](int subscript) {
+    if (subscript < 0 || subscript >= size) {
         throw out_of_range{"b out of range"};
     }
 
-    return ptr[b];
+    return ptr[subscript];
 }
 
 
-Point PointArray::operator[](int b) const {
-    if (b < 0 || b >= size) {
+Point PointArray::operator[](int subscript) const {
+    if (subscript < 0 || subscript >= size) {
         throw out_of_range{"b out of range"};
     }
 
-    return ptr[b];
+    return ptr[subscript];
 }
 
 ostream& operator<<(ostream& output, const PointArray& a) {

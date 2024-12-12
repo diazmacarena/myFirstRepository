@@ -11,7 +11,7 @@ int main() {
     int count = 0;
     for (int item : items) {
         if (esPrimo(item)) {
-            primeCount++;
+            count++;
         }
     }
     cout << count;

@@ -10,12 +10,12 @@ class PointArray
 
     public:
     explicit PointArray(int size);
-    PointArray(const PointArray &a);
+    PointArray(const PointArray &a); // constructor copia
     ~PointArray();
 
     size_t getSize() const; 
 
-    PointArray& operator=(const PointArray&); 
+    const PointArray& operator=(const PointArray&); 
     bool operator==(const PointArray&) const; 
     bool operator!=(const PointArray&) const;
 

@@ -1,3 +1,7 @@
+
+#include <iostream>
+using namespace std;
+
 class Polygon {
     public:
     Polygon (int a, int b) : width(a), height(b) {}
